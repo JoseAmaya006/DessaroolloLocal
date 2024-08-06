@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Móvil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página de inicio de sesión -->
+    <div id="login-page">
+        <div class="container">
+            <div class="form-container" id="login-container">
+                <h1>Inicio de Sesión</h1>
+                <form id="login-form">
+                    <input type="email" id="login-email" placeholder="Correo Electrónico" required>
+                    <input type="password" id="login-password" placeholder="Contraseña" required>
+                    <button type="submit">Iniciar Sesión</button>
+                    <p><a href="#" id="switch-to-register">¿No tienes cuenta? Regístrate aquí</a></p>
+                </form>
+            </div>
+            <div class="form-container" id="register-container" style="display: none;">
+                <h1>Registro</h1>
+                <form id="register-form">
+                    <input type="text" id="register-name" placeholder="Nombre" required>
+                    <input type="email" id="register-email" placeholder="Correo Electrónico" required>
+                    <input type="password" id="register-password" placeholder="Contraseña" required>
+                    <button type="submit">Registrarse</button>
+                    <p><a href="#" id="switch-to-login">¿Ya tienes cuenta? Inicia sesión aquí</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página principal después de iniciar sesión -->
+    <div id="dashboard-page" style="display: none;">
+        <header>
+            <div class="logo-container">
+                <img src="profile.jpg" alt="Foto de Perfil" class="profile-pic">
+            </div>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar...">
+                <button id="search-btn">🔍</button>
+            </div>
+        </header>
+        <main>
+            <h1>ABC de Derecho Internacional de los Conflictos Armados para el personal del componente de Infantería de Marina</h1>
+            <div class="menu">
+                <select id="menu-select">
+                    <option value="prologue">Prólogo</option>
+                    <option value="introduction">Introducción</option>
+                    <option value="objectives">Objetivos</option>
+                    <option value="scope">Alcance</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button class="round-btn" data-target="unit1">Unidad 1</button>
+                <button class="round-btn" data-target="unit2">Unidad 2</button>
+                <button class="round-btn" data-target="unit3">Unidad 3</button>
+                <button class="round-btn" data-target="unit4">Unidad 4</button>
+                <button class="round-btn" data-target="unit5">Unidad 5</button>
+                <button class="round-btn" data-target="annex">Anexos</button>
+            </div>
+        </main>
+        <div id="content-container" class="content-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

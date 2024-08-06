@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2b8ade;
+    color: #fff;
+}
+
+.logo-container .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 5px;
+}
+
+#search-btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #e0e0e0;
+}
+
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+.menu {
+    margin-bottom: 20px;
+}
+
+#menu-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.round-btn {
+    background-color: #2b8ade;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.round-btn:hover {
+    background-color: #1a6ab4;
+}
+
+.content-container {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Estilos para la página de inicio de sesión */
+#login-page, #dashboard-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2b8ade;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a6ab4;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #2b8ade;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
